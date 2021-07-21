@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN
 #include "../external/catch2/catch.hpp"
-#include "../src/string/tolower.hpp"
+#include "../src/string/to_lower.hpp"
 
 #include <vector>
 #include <string>
