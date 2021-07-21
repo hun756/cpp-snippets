@@ -5,7 +5,7 @@
 #include <vector>
 #include <string>
 
-TEST_CASE("Is Null Or White Space Test", "[Is Prime]")
+TEST_CASE("Is Null Or White Space Test", "[isNullOrWhiteSpace]")
 {
     struct TestStruct
     {
