@@ -10,12 +10,8 @@ namespace Array
     static bool includesAny(std::vector<T> &nums, std::vector<T> &incs)
     {
         for (auto &&_incVars : incs)
-        {
             if (std::find(nums.begin(), nums.end(), _incVars) != nums.end())
-            {
                 return true;
-            }
-        }
 
         return false;
     }
