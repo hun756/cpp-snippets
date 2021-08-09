@@ -5,12 +5,14 @@
 
 namespace Algorithm
 {
-    template <typename T>
-    std::unordered_map<T, int> frequency(T val)
+    template <typename T, typename U>
+    std::unordered_map<T, size_t> frequency(U val)
     {
-        std::unordered_map<T, int> mp;
+        std::unordered_map<T, size_t> mp;
         for (auto&& var : val)
             mp[var]++;
+
+        return mp;
     }
 } // namespace Algorithm
 
