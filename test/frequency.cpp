@@ -53,8 +53,6 @@ TEST_CASE("Frequency Test With Vector Container", "[frequency]")
         }
     };
 
-    std::cout << "printed" << testVec[0].actual["melon"] << '\n';
-
     for (auto &&var : testVec)
     {
         REQUIRE(Algorithm::frequency<
