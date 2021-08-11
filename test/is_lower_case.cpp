@@ -17,7 +17,7 @@ struct TestStruct
     }
 };
 
-TEST_CASE("Array Contains With Integer Vector", "[contains]")
+TEST_CASE("Is Lower Case", "[is_lower]")
 {
     std::vector<TestStruct> testVec{
         {

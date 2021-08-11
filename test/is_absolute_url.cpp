@@ -18,7 +18,7 @@ struct TestStruct
     }
 };
 
-TEST_CASE("Array Contains With Integer Vector", "[contains]")
+TEST_CASE("Absolute Url", "[is_absolute_url]")
 {
     std::vector<TestStruct> testVec{
         {
