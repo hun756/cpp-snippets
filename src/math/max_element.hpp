@@ -6,7 +6,7 @@
 namespace Math
 {
     template<class FwIterator, class Compare>
-    auto maxElement(FwIterator _begin, FwIterator _end, Compare cmp)
+    FwIterator maxElement(FwIterator _begin, FwIterator _end, Compare cmp)
     {
         assert(_begin != _end);
 
@@ -18,11 +18,11 @@ namespace Math
                 maxElem = _begin;
             ++_begin;
         }
-        return *maxElem;
+        return maxElem;
     }    
 
     template<class FwIterator>
-    auto maxElement(FwIterator _begin, FwIterator _end) 
+    FwIterator maxElement(FwIterator _begin, FwIterator _end) 
     {
         return maxElement(
                 _begin, 

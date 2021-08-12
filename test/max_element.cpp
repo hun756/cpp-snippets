@@ -34,7 +34,7 @@ TEST_CASE("Max Element in Array <int> Array Test", "max_element")
 
     for (auto&& var : testVec)
     {
-        REQUIRE(Math::maxElement(var.vecs.begin(), var.vecs.end()) == var.actual);
+        REQUIRE(*Math::maxElement(var.vecs.begin(), var.vecs.end()) == var.actual);
     }
 }
 
@@ -53,7 +53,7 @@ TEST_CASE("Max Element in Array <float> Array Test", "max_element")
 
     for (auto&& var : testVec)
     {
-        REQUIRE(Math::maxElement(var.vecs.begin(), var.vecs.end()) == var.actual);
+        REQUIRE(*Math::maxElement(var.vecs.begin(), var.vecs.end()) == var.actual);
     }
 }
 
@@ -84,6 +84,6 @@ TEST_CASE("Max Element in Array <int> Array Test with std::array<> Continer", "m
 
     for (auto&& var : testVec)
     {
-        REQUIRE(Math::maxElement(var.arr.begin(), var.arr.end()) == var.actual);
+        REQUIRE(*Math::maxElement(var.arr.begin(), var.arr.end()) == var.actual);
     }
 }
