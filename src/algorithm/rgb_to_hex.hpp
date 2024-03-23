@@ -1,16 +1,22 @@
 #ifndef ALGORITHM_RGB_TO_HEX_HPP
 #define ALGORITHM_RGB_TO_HEX_HPP
 
+#include <iomanip>
 #include <string>
 #include <sstream>
 
 namespace Algorithm
 {
-    std::string rgbToHex(uint8_t r, uint8_t g, uint8_t b)
+    inline std::string rgbToHex(uint8_t r, uint8_t g, uint8_t b)
     {
-        std::stringstream ss;
-        ss << '#'; 
-        ss << std::hex << (r << 16 | g << 8 | b);
+        std::ostringstream ss;
+        ss << '#' 
+           << std::uppercase
+           << std::hex
+           << std::setfill('0')
+           << std::setw(2) << static_cast<int>(r)
+           << std::setw(2) << static_cast<int>(g)
+           << std::setw(2) << static_cast<int>(b);
         return ss.str();
     }
 
